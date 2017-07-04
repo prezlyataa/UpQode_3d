@@ -1,0 +1,280 @@
+@font-face {
+    font-family: BEYNO;
+    src: url(../fonts/BEYNO.ttf);
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1540px;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-nav>li>.dropdown-menu,
+.navbar-nav li a {
+    color: #fff;
+}
+
+.carousel-caption h2 {
+    text-transform: uppercase;
+}
+
+.yellow_phrase,
+.navbar-nav li a:hover {
+    color: #fff200;
+}
+
+.navbar-header .navbar-brand,
+.navbar-header .navbar-brand:hover,
+.navbar-header .navbar-brand:focus  {
+    font-size: 30px;
+    font-family: BEYNO, sans-serif;
+    color: #009dda;
+    font-weight: 600;
+}
+
+.navbar-header .navbar-brand span {
+    color: #503392;
+    font-weight: 300;
+}
+
+.navbar-default {
+    border-color: #fff;
+}
+
+.navbar-nav>li>.dropdown-menu,
+.navbar-nav>li>.dropdown-menu .dropdown-submenu .dropdown-menu,
+.navbar-nav li a:hover {
+    background-color: rgba(44,30,62,0.8);
+}
+
+
+
+/*Dropdown Menu */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* End styles for Dropdowm menu  */
+
+
+.navbar-form .form-control {
+    background-color: #e8e4f1;
+    border-radius: 0;
+    height: 26px;
+    margin-top: 4px;
+}
+
+.banner-section {
+    padding-top: 0;
+    overflow: auto;
+}
+
+.banner-section .item img {
+    width: 100%;
+}
+
+.banner-section .carousel-inner .item .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -9% 0 0 -25%;
+}
+
+
+.carousel-caption h2 {
+    font-size: 64px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+@media (max-width: 992px) {
+    .carousel-caption h2 {
+        font-size: 42px;
+        padding-bottom: 40px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    .carousel-caption p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-caption h2 {
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+    .carousel-caption p {
+        font-size: 6px;
+    }
+    .banner-section .carousel-inner .item .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30%;
+        width: 50%;
+        margin: -15% 0 0 -25%;
+    }
+}
+
+@media (max-width: 448px) {
+    .carousel-caption h2 {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .carousel-caption p {
+        font-size: 4px;
+    }
+    .banner-section .carousel-inner .item .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30%;
+        width: 50%;
+        margin: -19% 0 0 -25%;
+    }
+}
+
+@media (min-width: 767px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    .navbar-right .dropdown-menu {
+        right: auto;
+    }
+    /*from http://www.barrykooij.com/bootstrap-submenu-open-on-mouse-over/ to get hover behaviour on desktop */
+    ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
+    ul.nav li.dropdown:hover ul.dropdown-menu li.dropdown-submenu ul.dropdown-menu {
+        display: none;
+    }
+    ul.nav li.dropdown ul.dropdown-menu li.dropdown-submenu:hover ul.dropdown-menu {
+        display: block;
+    }
+    .lead {
+        font-size: 21px;
+    }
+}
+
+
