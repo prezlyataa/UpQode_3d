@@ -360,11 +360,13 @@ body {
 }
 
 .products__desc {
-    color: #373737;
+    color: #999;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
 }
+
+
 
 
 /*     About us     */
@@ -399,6 +401,10 @@ body {
     text-align: right;
 }
 
+
+
+
+
 /*     Contact     */
 
 .contact-section {
@@ -408,6 +414,88 @@ body {
 .contact-section .intro {
     text-align: center;
 }
+
+#googlemaps {
+    height: 630px;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+#contactform {
+    position: relative;
+    z-index: 1; /* z-index должен быть больше, чем у Google Maps */
+    margin: 0 auto;
+    background: #353330;
+    height: auto;
+    color: white;
+    max-width: 945px;
+    margin-top: 100px;
+    padding: 70px 60px;
+}
+
+.fields {
+    width: 60%;
+    float: left;
+}
+
+.address {
+    width: 30%;
+    float: right;
+}
+
+.name_email input {
+    width: 238px;
+    height: 50px;
+    padding-left: 10px;
+    color: #353330;
+}
+
+.name_email .input_name{
+    margin-right: 11px;
+}
+
+.area textarea {
+    margin-top: 10px;
+    width: 490px;
+    height: 140px;
+    padding-left: 10px;
+    color: #353330;
+}
+
+.post {
+    margin-top: 10px;
+}
+
+.like {
+    padding-left: 10px;
+}
+
+.send {
+    padding: 15px 38px;
+    background-color: #ffff00;
+    color: #373737;
+    float: right;
+    margin-right: 3px;
+}
+
+.address p {
+    line-height: 14px;
+}
+
+.adr, .phone {
+    padding-bottom: 22px;
+}
+
+
+
+/*     Footer    */
+
+
+
+
+
 
 
 /* Media queries */
@@ -426,6 +514,19 @@ body {
     .right_img {
         text-align: center;
     }
+    .name_email input {
+        width: 80%;
+    }
+    .input_name {
+        margin-bottom: 10px;
+    }
+    .area textarea {
+        width: 80%;
+    }
+    .send {
+        margin-right: 100px;
+        padding: 4px 10px;
+    }
 }
 
 
@@ -443,6 +544,22 @@ body {
     }
     .technologies .percent_img img {
         width: 75%;
+    }
+    .fields, .address {
+        width: 100%;
+    }
+    .name_email input {
+        width: 100%;
+    }
+    .area textarea {
+        width: 100%;
+    }
+    .send {
+        margin-right: 0;
+    }
+    .address {
+        text-align: center;
+        padding-top: 20px;
     }
 }
 
