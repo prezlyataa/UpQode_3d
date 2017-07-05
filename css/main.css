@@ -24,7 +24,8 @@ body {
 .navbar-nav li a:hover,
 .navbar-nav li a:focus,
 .navbar-nav li a:active,
-.block_1 .block_text h3 {
+.block_1 .block_text h3,
+.products__section-name  {
     color: #fff;
 }
 
@@ -32,12 +33,15 @@ body {
 .about_choose_us h2,
 .block_text h3,
 .skills h2,
-.names {
+.names,
+.contact-section h2,
+.products__section-name {
     text-transform: uppercase;
 }
 
 .yellow_phrase,
-.navbar-nav li a:hover {
+.navbar-nav li a:hover,
+.products__section-name_yellow {
     color: #fff200;
 }
 
@@ -70,6 +74,7 @@ body {
 .navbar-nav li a:active {
     background-color: rgba(44,30,62,0.8);
 }
+
 
 
 
@@ -174,12 +179,17 @@ body {
 /* End styles for Dropdowm menu  */
 
 
+
+
 .navbar-form .form-control {
     background-color: #e8e4f1;
     border-radius: 0;
     height: 26px;
     margin-top: 4px;
 }
+
+
+
 
 /*     Banner     */
 
@@ -205,6 +215,9 @@ body {
     font-size: 64px;
     padding-bottom: 40px;
 }
+
+
+
 
 /*     Choose us block     */
 
@@ -275,9 +288,83 @@ body {
     color: #999;
 }
 
+
+
+
 /*     Products     */
 
+.products-section {
+    width: 100%;
+}
 
+.products__header {
+    background: url("../img/our-products/overlay.png");
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+}
+
+.products__section-name {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.products__wrapper {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+.products__item {
+    max-width: 335px;
+    padding-bottom: 90px;
+}
+
+.products__img-wrapper {
+    width: 144px;
+    height: 144px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.products__img {
+    width: 100%;
+}
+
+.products__element {
+    display: inline-block;
+    max-width: 180px;
+    padding-left: 16px;
+}
+
+.products__title {
+    color: #232323;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.products__subheader {
+    color: #503392;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.products__desc {
+    color: #373737;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
 
 
 /*     About us     */
@@ -312,9 +399,15 @@ body {
     text-align: right;
 }
 
+/*     Contact     */
 
+.contact-section {
+    padding-top: 150px;
+}
 
-
+.contact-section .intro {
+    text-align: center;
+}
 
 
 /* Media queries */
@@ -349,7 +442,7 @@ body {
         margin-left: 10px;
     }
     .technologies .percent_img img {
-        width: 50%;
+        width: 75%;
     }
 }
 
@@ -395,6 +488,12 @@ body {
     }
     .block_1, .block_2, .block_3, .block_4 {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 324px) {
+    .products__wrapper {
+        text-align: center;
     }
 }
 
