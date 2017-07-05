@@ -1,4 +1,5 @@
-// Latitude and longitude вашего места
+//Google Maps//
+
 var position = [49.84974361, 24.02181244];
 
 function showGoogleMaps() {
@@ -24,5 +25,6 @@ function showGoogleMaps() {
         animation: google.maps.Animation.DROP
     });
 }
-
 google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+

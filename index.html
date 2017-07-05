@@ -347,19 +347,21 @@
             </div>
             <div id="googlemaps"></div>
             <div id="contactform" class="clearfix">
-                <div class="fields clearfix">
-                    <div class="name_email">
-                        <input type="text" class="input_name" placeholder="Full Name">
-                        <input type="text" class="input_email" placeholder="E-mail Address">
+                <form action="#" id="validation">
+                    <div class="fields clearfix">
+                        <div class="name_email">
+                            <input type="text" name='form_name'class="input_name" placeholder="Full Name" required>
+                            <input type="text" name='form_email'class="input_email" placeholder="E-mail Address" required>
+                        </div>
+                        <div class="area">
+                            <textarea name="form_area" cols="30" rows="10" class="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="post clearfix">
+                            <input type="checkbox" id="check"><span class="like">I like your company</span>
+                            <button class="send">Send</button>
+                        </div>
                     </div>
-                    <div class="area">
-                        <textarea name="" id="" cols="30" rows="10" class="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="post clearfix">
-                        <input type="checkbox" id="check"><span class="like">I like your company</span>
-                        <button class="send">Send</button>
-                    </div>
-                </div>
+                </form>
                 <div class="address clearfix">
                     <div class="adr">
                         <p>69/A, Some Street Name</p>
@@ -396,6 +398,8 @@
 
     <script src="js/common.js"></script>
 
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -405,8 +409,6 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
-    <!-- Google maps -->
 
 </body>
 
